@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Libro Diario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body onload="cargarFecha()">
+
+        <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand">Guardia Obrador / Libro Diario</a>
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+              </nav>
+
+
+        <div class="container">
+
+        <div class="row">
+
+        <div class="col-sm-4">
+
+                <div class="card">
+                        <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Fecha</label>
+                                  <input type="text" id="txtFecha" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="required" disabled>
+                                </div>
+                                <div class="form-group">
+                                        <label for="exampleInputEmail1">Hora</label>
+                                        <input type="time" id="txtFecha" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="required">
+                                      </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Registro</label>
+                                  <textarea type="password" id="txtRegistro" class="form-control" id="exampleInputPassword1" placeholder="Ingrese Registro" required="required"></textarea>
+                                </div>
+                                <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Importante</label>
+                                      </div>
+                                <input type="button" class="btn btn-primary" onclick="guardar()" value="Agregar" id="btnAgregar">
+                              </form>
+                            </div>
+        </div>
+
+        <div class="col-sm-8">
+
+            <div class="card">
+                <table class="table table-hover">
+                        <thead>
+                          <tr  class="table-active">
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Descripcion</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tablita">
+                          <tr>
+                            <td scope="row">12/02/2019 13:55</td>
+                            <td>Portero Cristian Ceballos inicia turno sin novedades</td>
+                          </tr>
+                          <tr class="table-warning">
+                            <td scope="row">12/02/2019 13:55</td>
+                            <td>Ingresa el señor Hector Kucla
+                            </td>
+                          </tr>
+                          <tr>
+                                <td scope="row">12/02/2019 13:55</td>
+                                <td>Enciendo las luces del obrador</td>
+                          </tr>
+                          <tr>
+                                <td scope="row">12/02/2019 13:55</td>
+                                <td>Realizo recorrido sin novedades</td>
+                          </tr>
+                          <tr>
+                                <td scope="row">12/02/2019 13:55</td>
+                                <td>Se comunica l señor supervisor Eduardo Pacheco soliciando novedades</td>
+                          </tr>
+                          <tr>
+                                <td scope="row">12/02/2019 13:55</td>
+                                <td>Ingresa el camion recolector de basura int 405</td>
+                              </tr>
+                              <tr class="table-warning">
+                                <td scope="row">12/02/2019 13:55</td>
+                                <td>Siendo la hora indicada fulanito de tal lava el auto, me dirijo a indicarle los horarios 
+                                    correspondiente
+                                </td>
+                              </tr>
+
+                        </tbody>
+                      </table>
+
+                    </div>
+        </div>
+
+        </div>
+      
+        </div>
+</body>
+</html>
