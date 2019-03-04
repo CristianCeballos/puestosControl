@@ -7,9 +7,10 @@
     <title>Libro Diario</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="script.js"></script>
 
 </head>
-<body>
+<body onload="cargarFecha()">
 
         <nav class="navbar navbar-light bg-light">
                 <a class="navbar-brand">Guardia Complejo / Libro Diario</a>
@@ -29,18 +30,22 @@
                 <div class="card">
                         <form>
                                 <div class="form-group">
-                                  <label for="exampleInputEmail1">Fecha y Hora</label>
-                                  <input type="text" id="txtUsuario" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="required">
+                                  <label for="exampleInputEmail1">Fecha</label>
+                                  <input type="text" id="txtFecha" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="required" disabled>
                                 </div>
                                 <div class="form-group">
+                                        <label for="exampleInputEmail1">Hora</label>
+                                        <input type="time" id="txtFecha" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="required">
+                                      </div>
+                                <div class="form-group">
                                   <label for="exampleInputPassword1">Registro</label>
-                                  <textarea type="password" id="txtContra" class="form-control" id="exampleInputPassword1" placeholder="Ingrese Registro" required="required"></textarea>
+                                  <textarea type="password" id="txtRegistro" class="form-control" id="exampleInputPassword1" placeholder="Ingrese Registro" required="required"></textarea>
                                 </div>
                                 <div class="form-group form-check">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                         <label class="form-check-label" for="exampleCheck1">Importante</label>
                                       </div>
-                                <input type="button" class="btn btn-primary" onclick="" value="Agregar" id="btnIngresar">
+                                <input type="button" class="btn btn-primary" onclick="guardar()" value="Agregar" id="btnAgregar">
                               </form>
                             </div>
         </div>
@@ -50,12 +55,12 @@
             <div class="card">
                 <table class="table table-hover">
                         <thead>
-                          <tr  class="table-primary">
+                          <tr  class="table-active">
                             <th scope="col">Fecha</th>
                             <th scope="col">Descripcion</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tablita">
                           <tr>
                             <td scope="row">12/02/2019 13:55</td>
                             <td>Ingresa el camion recolector de basura int 405</td>
@@ -78,6 +83,17 @@
                                 <td scope="row">12/02/2019 13:55</td>
                                 <td>Inicia turno Portero Cristian Ceballos</td>
                           </tr>
+                          <tr>
+                                <td scope="row">12/02/2019 13:55</td>
+                                <td>Ingresa el camion recolector de basura int 405</td>
+                              </tr>
+                              <tr class="table-warning">
+                                <td scope="row">12/02/2019 13:55</td>
+                                <td>Siendo la hora indicada fulanito de tal lava el auto, me dirijo a indicarle los horarios 
+                                    correspondiente
+                                </td>
+                              </tr>
+
                         </tbody>
                       </table>
 
