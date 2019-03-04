@@ -1,0 +1,40 @@
+body{
+
+}
+
+.card{
+
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.login{
+
+    width: 40%;
+    margin-top: 2%;
+
+}
+
+.form-group{
+    padding: 5px;
+
+}
+
+table{
+    text-align: center;
+}
+
+.row{
+    margin: 5px;
+}
+
+.imagen-login{
+    width: 150px;
+    height: 150px;
+  
+}
+
+.tarjeta{
+    text-align: center;
+}
+

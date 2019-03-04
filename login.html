@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>LOGIN</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+
+<body>
+
+<div class="container login">
+    <div class="card">
+
+      <div class="card-head tarjeta">
+          <img src="logo.jpg" class="card-img imagen-login" alt="...">
+      </div>
+
+      <div class="card-body">
+        <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Usuario</label>
+                  <input type="text" id="txtUsuario" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese Usuario" required="required">
+                  <small id="emailHelp" class="form-text text-muted">Nunca se guardaran sus credenciales</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Contraseña</label>
+                  <input type="password" id="txtContra" class="form-control" id="exampleInputPassword1" placeholder="Ingrese contraseña" required="required">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                </div>
+                <input type="button" class="btn btn-primary" onclick="login()" value="Ingresar" id="btnIngresar">
+              </form>
+            </div>
+
+</div>
+
+</div>
+    
+</body>
+</html>
